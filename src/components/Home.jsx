@@ -1,12 +1,14 @@
 import React from "react";
 import vg from "../assets/2.webp"
 import {AiFillGoogleCircle,AiFillAmazonCircle,AiFillYoutube,AiFillInstagram} from "react-icons/ai"
+import Contact from "./Contact";
+import Services from "./Services";
 
 const Home = () => {
   return (
     <>
     {/* header */}
-      <div className="home">
+      <div className="home" id="home">
         <main>
           <h1>ReacTech</h1>
           <p>Solution to all your problems</p>
@@ -27,14 +29,14 @@ const Home = () => {
       </div>
 
 
-      <div className="home3">
+      <div className="home3" id="about">
             <div>
                 <h1>Who we are?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, eos repudiandae porro, facilis quasi velit, error at non aliquam earum adipisci quas! Numquam placeat quasi in, iste corporis non animi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga hic vitae sapiente adipisci suscipit?</p>
             </div>
       </div>
 
-      <div className="home4">
+      <div className="home4" id="brands">
             <div>
                 <h1>Brands</h1>
                 <article>
@@ -61,6 +63,14 @@ const Home = () => {
 
                 </article>
             </div>
+      </div>
+
+      <div className="contact" id="contact">
+        <Contact/>
+      </div>
+
+      <div className="contact" id="services">
+        <Services/>
       </div>
     </>
   );
